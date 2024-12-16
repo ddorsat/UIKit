@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Right On Target
+//  Contacts
 //
-//  Created by Dmitry on 13.12.2024.
+//  Created by Dmitry on 16.12.2024.
 //
 
 import UIKit
@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        print("APplicationDidFinishLaunching")
         // Override point for customization after application launch.
         return true
     }
