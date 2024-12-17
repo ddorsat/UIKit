@@ -8,21 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     private var contacts = [ContactProtocol]() {
         didSet {
             contacts.sort { $0.title < $1.title }
+            storage.save(contacts: contacts)
         }
     }
     private func loadContacts() {
-        contacts.append(Contact(title: "Dmitry", phone: "79998564843"))
-        contacts.append(Contact(title: "John", phone: "79998587882"))
-        contacts.append(Contact(title: "Mark", phone: "79263224322"))
+        contacts = storage.load()
     }
 
     override func viewDidLoad() {
-        loadContacts()
         super.viewDidLoad()
+        storage = ContactStorage()
+        loadContacts()
         // Do any additional setup after loading the view.
     }
 
@@ -57,6 +57,7 @@ class ViewController: UIViewController {
         alertController.addAction(cancelButton)
         self.present(alertController, animated: true, completion: nil)
     }
+    var storage: ContactStorageProtocol
 }
 
 extension ViewController: UITableViewDataSource {
