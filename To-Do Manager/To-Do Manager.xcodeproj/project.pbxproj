@@ -10,22 +10,9 @@
 		36AE02432D11F96A003062DD /* To-Do Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		36AE02552D11F96A003062DD /* Exceptions for "To-Do Manager" folder in "To-Do Manager" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 36AE02422D11F96A003062DD /* To-Do Manager */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		36AE02452D11F96A003062DD /* To-Do Manager */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				36AE02552D11F96A003062DD /* Exceptions for "To-Do Manager" folder in "To-Do Manager" target */,
-			);
 			path = "To-Do Manager";
 			sourceTree = "<group>";
 		};
